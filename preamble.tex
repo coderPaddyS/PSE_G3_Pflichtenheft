@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{currfile}
+
+\newcommand\concat[2]{
+    #1#2
+}
+
+\newcommand\inprelfile[1] {
+    \input{\relfile{#1}}
+}
+
+\newcommand\relfile[1]{
+    \currfiledir#1
+}
+
+\newcommand\relimgfile[1]{
+    \currfiledir images/#1
+}
+
+\newcommand\relcodefile[1]{
+    \currfiledir listings/#1
+}
+
+\newcommand\inprelmod[1] {
+    \input{\relfile{#1/main.tex}}
+}
+
+\newcommand\inpmod[1] {
+    \input{\concat{Kapitel/#1/}{main.tex}}
+}
