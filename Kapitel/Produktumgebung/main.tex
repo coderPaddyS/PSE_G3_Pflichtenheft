@@ -1,1 +1,20 @@
-\section{Produkteinsatz}
+\newpage
+\section{Produktumgebung}
+
+\subsection{Hard- und Software}
+    \paragraph{App}
+        Die App läuft auf einem Android Smartphone, welches mindestens API-Level 22 unterstützt.
+
+    \paragraph{Backend}
+        Das Server-Backend läuft auf einer virtuellen Maschine auf einem Server.
+        Auf der virtuellen Maschine läuft Debian 10 (Buster).
+        Diese virtuelle Maschine ist fähig, Java-Programme durch eine JVM auszuführen.
+
+    \paragraph{Admin-Panel}
+        Das Admin-Panel ist auf jedem HTML5-, JavaScript- und CSS-fähigem Gerät aufrufbar.
+
+\subsection{Schnittstellen}
+    \paragraph{Netzwerk-Zugriffe}
+        Die App sowie das Admin-Panel kommunizieren mit dem Server über HTTPS. Dieser ist über die definierte URL \textit{https://pse.itermori.de},
+        das Admin-Panel über die URL \textit{https://pse.itermori.de/admin}, erreichbar. \\
+        Der Server kommuniziert durch HTTPS mit den KIT-Servern erreichbar unter \textit{https://kit.edu}.
