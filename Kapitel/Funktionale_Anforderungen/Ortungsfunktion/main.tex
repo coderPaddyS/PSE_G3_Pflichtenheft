@@ -1,0 +1,28 @@
+\subsection{Ortungsfunktion}
+\label{Ortungsfunktion}
+\paragraph{Ziel}
+Einfacheres Zurechtfinden durch Anzeigen des aktuellen Standorts auf der Karte
+\paragraph{Kategorie}
+primär
+\paragraph{Vorbedingung}
+Der Benutzer befindet sich in der Haupansicht (Kartenansicht).
+\paragraph{Nachbedingung}
+Der Benutzer befindet sich in der Haupansicht (Kartenansicht).
+\paragraph{Akteure}
+
+\paragraph{Auslösendes Ergeignis 1}
+Der Benutzer klickt auf das den Knopf zur Ortung.
+\paragraph{Beschreibung 1}
+\begin{enumerate}
+    \item Wenn die App keinen Standortzugriff besitzt, wird dieser angefordert.
+    \item Wird der Standortzugriff verweigert, passsiert nichts und die normale Kartenanscht bleibt ohne Änderung bestehen.
+    \item Erhält die App Standortzugriff oder besitzt sie ihn bereits, wird der aktuelle Standort auf ihr angezeigt. Die Karte wird so verschoben, dass sich der aktuelle Standort in der Mitte befindet. Es wird soweit in die Karte hineingezoomt, dass Straßen und Kreuzungen gut erkennbar sind.
+\end{enumerate}
+
+\paragraph{Auslösendes Ergeignis 2}
+Der Benutzer öffnet die App und gelangt das erste Mal (für diese Session) in die Kartenansicht.
+\paragraph{Beschreibung 2}
+\begin{enumerate}
+    \item Wenn die App keinen Standortzugriff hat, wird die Position auf der Karte angezeigt, die zuletzt angezeigt wurde, bevor die App geschlossen wurde.
+    \item Besitzt die App Standortzugriff, wird der aktuelle Standort auf ihr angezeigt. Die Karte wird so angezeigt, dass sich der aktuelle Standort in der Mitte befindet und Straßen und Kreuzungen gut erkennbar sind.
+\end{enumerate}
