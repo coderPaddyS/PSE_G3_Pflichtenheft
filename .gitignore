@@ -319,3 +319,6 @@ TSWLatexianTemp*
 !.vscode/*.code-snippets
 
 # End of https://www.toptal.com/developers/gitignore/api/latex,visualstudiocode
+
+# do not upload the main.pdf
+main.pdf
