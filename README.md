@@ -1,5 +1,5 @@
 # Repository
-Dieses Repository ist Teil eines PSE-Projekt der KIT Universität, Institut KASTELL und unter der GPL3.0-or-later Lizenz veröffentlicht und somit zur Nutzung freigegeben.
+Dieses Repository ist Teil eines PSE-Projekt der KIT Universität, Institut KASTEL und unter der GPL3.0-or-later Lizenz veröffentlicht und somit zur Nutzung freigegeben.
 
 # PSE
 Dieses Repository beinhaltet den Quellcode zum Pflichtenheft nach dem Wasserfallmodell mit Rückkoppelung.
