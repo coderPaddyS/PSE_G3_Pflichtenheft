@@ -6,7 +6,7 @@ Dieses Repository beinhaltet den Quellcode zum Pflichtenheft nach dem Wasserfall
 Zur Compilierung wird eine installierte LaTeX Umgebung mit `latexmk` und `shell-escape` benötigt.
 
 # Kompilierungsmindestanforderungen
-Um den Sourcecode zu kompilieren werden diverse Systemvoraussetzungen benötigt. Zum einen natürlich eine lokale LaTeX-Umgebung, die in der Lage ist `latexmk` und `shell-escape` auszühren.
+Um den Sourcecode zu kompilieren werden diverse Systemvoraussetzungen benötigt. Zum einen natürlich eine lokale LaTeX-Umgebung, die in der Lage ist `latexmk` mit `shell-escape` auszuführen.
 Zusätzlich wird zum Rendern der UML-Diagramme `Mermaid-js` benötigt. Die CLI `mmdc` zu `Mermaid-js` kann durch `npm` mit Administratorrechten, sowohl auf Linux als auch auf Windows, durch `npm install -g @mermaid-js/mermaid-cli` installiert werden. 
 Zur Installation von `npm` auf Windows kann der [NPM-Installer](https://nodejs.org/en/) verwendet werden.
 
@@ -56,10 +56,10 @@ classDiagram
 ![Klasse 2](./Examples/MermaidUML/class2.png)
 
 ## Verwendung im LaTeX-Dokument
-Zur Verwendung im LaTeX-Dokument existieren die beiden Befehle `\mermaid[options]{source}{dest}` und `\relmermaid[options]{file}`. I
-n beiden Befehlen beschreiben die `options` die Optionen, die an `\includegraphics` weitergegeben werden. 
-`\mermaid`s Quell- und Zieldateien sind relativ ausgehend von der Hauptdatei [`Pflichtenheft/main.tex`](./Pflichtenheft/main.tex) und können beliebig gewählt werden, wobei die Quelldatei mit `.mmd` endet, die Zieldatei mit `.png`.
-`\relmermaid`s Parameter ist der Name ohne Endung, die Quelldatei befindet sich im Ordner `./mermaid`, die Zieldatei in `./uml`, ausgehend vom Verzeichnis der inkludierenden Datei. Die Endungen sind analog zu `\mermaid`.
+Zur Verwendung im LaTeX-Dokument existieren die beiden Befehle `\mermaid[options]{source}{dest}` und `\relmermaid[options]{file}`. 
+In beiden Befehlen beschreiben die `options` die Optionen, die an `\includegraphics` weitergegeben werden. 
+`\mermaid`'s Quell- und Zieldateien sind relativ ausgehend von der Hauptdatei [`Pflichtenheft/main.tex`](./Pflichtenheft/main.tex) und können beliebig gewählt werden, wobei die Quelldatei mit `.mmd` endet, die Zieldatei mit `.png`.
+`\relmermaid`'s Parameter ist der Name ohne Endung, die Quelldatei befindet sich im Ordner `./mermaid`, die Zieldatei in `./uml`, ausgehend vom Verzeichnis der inkludierenden Datei. Die Endungen sind analog zu `\mermaid`.
 
 Beispiel der Ordnerstruktur für `\relmermaid[width=10cm]{Klassendiagramm1}` in `./Modelle/main.tex` (Analog ist `\mermaid[width=10cm]{Modelle/mermaid/Klassendiagramm.mmd}{Modelle/uml/Klassendiagramm.png}`, falls `./main.tex` die Hauptdatei ist):
 ```bash
