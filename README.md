@@ -73,4 +73,4 @@ Beispiel der Ordnerstruktur für `\relmermaid[width=10cm]{Klassendiagramm1}` in 
         └── Klassendiagramm.png
 ```
 
-Zu beachten ist bei der Verwendung von `relmermaid` dass der entsprechende `uml` Ordner existieren muss.
+Zu beachten ist bei der Verwendung von `\relmermaid` dass der entsprechende `uml` Ordner existieren muss.
