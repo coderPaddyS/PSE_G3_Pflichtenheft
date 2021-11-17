@@ -1,0 +1,12 @@
+classDiagram
+    Raubfisch --|> Meeresbewohner : ist ein
+    Heyfisch --|> Raubfisch : ist ein
+    KITAngestellter --|> Person : ist ein
+    TobiasHey --|> KITAngestellter : ist ein
+    TobiasHey --|> WalterFTichy : arbeitet für
+    WalterFTichy --|> Professor : ist ein
+    Professor --* KITAngestellter : ist ein
+    Heyfisch --o TobiasHey : gehört
+    WalterFTichy : void singen()
+    WalterFTichy : String Willkommen
+    RCS <--> WalterFTichy : Entwickler
