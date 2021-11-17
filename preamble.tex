@@ -4,6 +4,9 @@
 \usepackage{enumitem}
 \usepackage{microtype}
 
+\usepackage{shellesc}
+\usepackage{graphicx}
+
 \newcommand\concat[2]{
     #1#2
 }
@@ -30,4 +33,13 @@
 
 \newcommand\inpmod[1] {
     \input{\concat{Kapitel/#1/}{main.tex}}
+}
+
+\newcommand{\mermaid}[3][width=10cm]{
+    \ShellEscape{mmdc -i #2.mmd -o #3.png}
+    \includegraphics[#1]{#3.png}
+}
+
+\newcommand{\relmermaid}[2][width=10cm] {
+    \mermaid[#1]{\currfiledir mermaid/#2}{\currfiledir uml/#2}
 }
