@@ -12,4 +12,4 @@ jobs:
           root_file: main.tex
           latexmk_shell_escape: true
           #post_compile: "latexmk -c && mv main.pdf ./builds/$(date \"+%D-%T\").pdf"
-          post_compile: "latexmk -c && ls -al"
+          post_compile: "latexmk -c && mv ./main.pdf ./builds/$(date \"+%D-%T\").pdf"
