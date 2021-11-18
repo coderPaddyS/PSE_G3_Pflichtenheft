@@ -1,12 +1,26 @@
-\documentclass{article}
+\documentclass{scrreport}
 
 \usepackage{currfile}
 \usepackage{enumitem}
 \usepackage{microtype}
 
+\usepackage{titling}
+\usepackage{glossaries}
+
 \usepackage{shellesc}
 \usepackage{graphicx}
 \usepackage{float}
+
+\usepackage{hyperref}
+
+\usepackage[german]{datetime2}
+\usepackage{titling}
+\renewcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
 
 \newcommand\concat[2]{
     #1#2
@@ -43,4 +57,12 @@
 
 \newcommand{\relmermaid}[2][width=10cm] {
     \mermaid[#1]{\currfiledir mermaid/#2}{\currfiledir uml/#2}
+}
+
+\newcommand{\glossaryentry}[3] {
+    \newglossaryentry{#1}{
+        name={#1},
+        plural={#2},
+        description={#3}
+    }
 }
