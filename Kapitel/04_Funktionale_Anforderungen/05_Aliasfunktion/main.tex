@@ -1,0 +1,26 @@
+\section{Aliasfunktion}
+\paragraph{Ziel}
+Hinzufügen eines Alias zu einem Gebäude oder Raum.
+\paragraph{Kategorie}
+sekundär
+\paragraph{Vorbedingung}
+Gebäude bzw. Raum existiert und ist ausgewählt.
+\paragraph{Nachbedingung}
+Alias ist zusätzlicher Bezeichner des Gebäudes bzw. Raums.
+\paragraph{Akteure}
+
+\paragraph{Auslösendes Ereignis}
+Benutzer klickt auf das Aliashinzufügefeld.
+\paragraph{Beschreibung}
+\begin{enumerate}
+    \item Benutzer klickt auf das Aliashinzufügefeld.
+    \item Die Tastatur öffnet sich.
+    \item Der Benutzer wählt lokales Hinzufügen oder zusätzliches Vorschlagen als Bezeichner für das Gebäude bzw. den Raum für alle Benutzer aus.
+    \item Der Benutzer gibt den gewünschten Alias ein.
+    \item Der Benutzer bestätigt die Eingabe mit der Entertaste.
+    \item Die App prüft, ob die Eingabe bereits ein Bezeichner für ein Gebäude, einen Raum oder eine Person ist.
+    \subitem{Erfolg:} Die App zeigt eine Fehlermeldung unter dem Aliashinzufügefeld an.
+    \subitem{Misserfolg:} Die Tastatur schließt sich.
+    \subitem Bei der Wahl mit Vorschlag wird der Alias mit zugehörigem Gebäude bzw. Raum auf den Server geladen.
+    \subitem Der Alias wird als Bezeichner zu dem ausgewählten Gebäude bzw. Raum hinzugefügt und lokal auf dem Endgerät gespeichert.
+\end{enumerate}
