@@ -1,31 +1,38 @@
 \section{Suchfunktion}
 \paragraph{Ziel}
-Suchen und Finden von Gebäuden, Räumen und Büros durch Namen, Nummer oder Alias
+Der Benutzer kann nach Gebäuden und Räumen suchen. 
+Das Suchen ist möglich mit:
+\begin{itemize}
+    \item Gebäudenummer
+    \item Gebäudenummer und Raumnummer
+    \item Name einer Person (wenn nach Büro gesucht wird)
+    \item lokaler oder globaler Alias
+\end{itemize}
+
 \paragraph{Kategorie}
 primär
 \paragraph{Verfügbarkeit}
-offline (eingeschränkt, d.h es stehen ggf. nicht die aktuellsten Aliasse zur Verfügung)
+offline (eingeschränkt: Suche mit Personenname ggf. nur online möglich)
 \paragraph{Vorbedingung}
 Der Benutzer befindet sich in der Hauptansicht (Kartenansicht).
 \paragraph{Nachbedingung (Erfolg)}
 Das gesuchte Objekt wird angezeigt.
 \paragraph{Nachbedingung (Misserfolg)}
-Es erscheint eine Fehlermeldung. Existiert der gesuchte Raum nicht, aber das Gebäude, wird das Gebäude zusammen mit einer Fehlermeldung angezeigt.
+Es erscheint eine Fehlermeldung. Existiert das Gebäude aber der gesuchte Raum nicht, wird zusätzlich das Gebäude angezeigt.
 \paragraph{Akteure}
 Benutzer
 \paragraph{Auslösendes Ereignis}
-Benutzer klickt auf das Suchfeld
+Der Benutzer klickt auf das Suchfeld.
 \paragraph{Beschreibung}
 \begin{enumerate}
     \item Der Benutzer klickt auf das Suchfeld.
     \item Die Tastatur öffnet sich. Die App schlägt die letzten Suchbegriffe vor.
-    \item Der Benutzer tippt eine Gebäudenummer, eine Gebäudenummer zusammen mit einer Raumnummer, oder den Namen einer Person, die ein Büro besitzt, oder einen Alias ein.
+    \item Der Benutzer tippt einen Suchbegriff ein.
     \item Die App zeigt Vorschläge zum eingegebenen Text an. Die Vorschläge werden nach jedem eingegebenen Zeichen aktualisiert.
-    \item Der Nutzer wählt einen Vorschlag durch Klicken darauf aus oder bestätigt die Eingabe mit der Entertaste.
+    \item Der Nutzer wählt einen Vorschlag aus oder bestätigt die Eingabe.
     \item Die App prüft, ob zur Eingabe ein Treffer existiert.
     \subitem{Erfolg:} Die App zeigt das gesuchte Gebäude bez. den gesuchten Raum an.
     \subitem{Misserfolg:} 
-    \subsubitem Wenn kein Gebäude zur eingegeben Nummer/Alias existiert, oder die eingegebene Person nicht im System existiert, wird eine Fehlermeldung angezeigt.
-    \subsubitem Wenn das eingegebene Gebäude existiert, aber der dazu eingegebene Raum nicht, wird das Gebäude angezeigt. Eine Fehlermeldung wird angezeigt, dass der Raum (noch) nicht im System existiert.
-    \item Der eingegebene Text bleibt im Suchfeld stehen.
+    \subsubitem Wenn kein Gebäude zum eingegebenen Suchbegriff existiert, oder die eingegebene Person nicht im System existiert, wird eine Fehlermeldung angezeigt.
+    \subsubitem Existiert das Gebäude, aber der Raum nicht, zeigt die App das Gebäude und eine Fehlermeldung an.
 \end{enumerate}
