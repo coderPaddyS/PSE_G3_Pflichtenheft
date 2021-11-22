@@ -1,27 +1,30 @@
 \section{Anmeldefunktion}
 \label{Anmeldefunktion}
 \paragraph{Ziel}
-Identifikation eines Nutzers durch eine eindeutig bestimmte ID ohne genaueren Informationen über den Benutzer zu speichern.
+Nicht angemeldete Benutzer können sich anmelden.
 \paragraph{Kategorie}
 sekundär
 \paragraph{Verfügbarkeit}
-online
+online, nicht angemeldete Benutzer
 \paragraph{Vorbedingung}
-Der Benutzer befindet sich auf einer Gebäudeansicht und möchte einen Alias vorschlagen oder Bewerten.
-Der Benutzer hat ein Konto bei der genutzten Anmeldeplattform (Vorzugsweise OpenID Connect für Shibboleth Identity Provider).
+Der Benutzer besitzt ein Konto bei einer unterstützten Anmeldeplattform (vorzugsweise Shibboleth Identity Provider).
 \paragraph{Nachbedingung}
-Der Benutzer hat eine eindeutig bestimmte ID und kann nun Aliase vorschlagen und bewerten.
+Der Benutzer besitzt eine eindeutige ID. Der Benutzer ist ein "angemeldeter Benutzer".
 \paragraph{Akteure}
-Benutzer, Anmeldeplattform
+nicht angemeldeter Benutzer, Anmeldeplattform
 \paragraph{Auslösendes Ereignis}
-Der Benutzer hat auf die "Anmelden"-Schaltfläche gedrückt oder wollte einen Alias bewerten oder vorschlagen.
+\begin{itemize}
+      \item Der Benutzer hat auf eine "Anmelden"-Schaltfläche geklickt.
+      \item Der Benutzer hat versucht eine Aktion auszuführen, die nur angemeldeten Benutzern zur Verfügung steht.
+\end{itemize}
 \paragraph{Beschreibung}
 \begin{enumerate}
-    \item Der Benutzer hat das Ereignis ausgelöst
-    \item Der Benutzer bekommt beim erstmaligen Auslösen einen Hinweis über das verwendete Anmeldeverfahren und die betroffenen und gesammelten Daten.
-          Der Benutzer wird gefragt ob er fortfahren möchte.
-          \subitem Lehnt der Nutzer ab, so wird er zurück zur Gebäudeansicht geleitet.
-    \item Der Benutzer hat akzeptiert und das entsprechende Anmeldeverfahren wird eingeleitet.
-          \subitem Schlägt das Anmeldeverfahren fehl oder bricht der Nutzer ab, so wird er zurück zur Gebäudeansicht geleitet.
-    \item Nach erfolgreicher Anmeldung wird der Nutzer zur Gebäudeansicht zurückgeleitet und kann nun Aliase bewerten oder vorschlagen.
+      \item Der Benutzer kann den Anmeldevorgang in jedem Schritt abbrechen. Dann kehrt die App zur vorherigen Ansicht zurück.
+      \item Die App weist auf den Datenschutz hin.
+      \item Der Benutzer akzeptiert den Datenschutz.
+      \item Der Benutzer wählt eins der unterstützten Anmeldeverfahren.
+      \item Der Benutzer meldet sich über das gewählte Verfahren an.
+      \subitem{Erfolg:} Die App speichert eine eindeutige ID für den Benutzer. Die App weist dem Benutzer die Rolle "angemeldeter Benutzer" zu.
+      \item Die App zeigt Informationen zum Erfolg oder Misserfolg der Anmeldung an.
+      \item Die App kehrt zur vorherigen Ansicht zurück. 
 \end{enumerate}
