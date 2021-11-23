@@ -11,18 +11,23 @@ Der Benutzer befindet sich in der Hauptansicht (Kartenansicht).
 Der Benutzer befindet sich in der Hauptansicht (Kartenansicht).
 \paragraph{Akteure}
 angemeldeter oder nicht angemeldeter Benutzer
-\paragraph{Auslösendes Ereignis 1}
+
+\subsection*{/FA30/ Ortung auf Aufforderung}
+\label{/FA30/}
+\paragraph{Auslösendes Ereignis}
 Der Benutzer klickt auf den Knopf zur Ortung.
-\paragraph{Beschreibung 1}
+\paragraph{Beschreibung}
 \begin{enumerate}
     \item Wenn die App keinen Standortzugriff besitzt, wird dieser angefordert.
     \item Wird der Standortzugriff verweigert, passiert nichts. Die normale Kartenansicht bleibt ohne Änderung bestehen.
     \item Erhält die App Standortzugriff oder besitzt sie ihn bereits, wird der aktuelle Standort auf der Karte angezeigt. Die Karte wird so verschoben, dass sich der aktuelle Standort in der Mitte befindet. Es wird soweit in die Karte hineingezoomt, dass Straßennamen und Kreuzungen erkennbar sind.
 \end{enumerate}
 
-\paragraph{Auslösendes Ereignis 2}
+\subsection*{/FA31/ Ortung beim Start der Applikation}
+\label{/FA31/}
+\paragraph{Auslösendes Ereignis}
 Der Benutzer öffnet die App und gelangt das erste Mal (für diese Session) in die Kartenansicht.
-\paragraph{Beschreibung 2}
+\paragraph{Beschreibung}
 \begin{enumerate}
     \item Besitzt die App keinen Standortzugriff, wird die Position auf der Karte angezeigt, die zuletzt angezeigt wurde, bevor die App geschlossen wurde. Liegt keine letzte Position vor, wird der Platz zwischen der Mensa am Adenauerring und der Bibliothek angezeigt.
     \item Besitzt die App Standortzugriff, wird der aktuelle Standort auf ihr angezeigt. Der aktuelle Standort befindet sich in der Mitte der angezeigten Karte. Straßennamen und Kreuzungen sind erkennbar.
