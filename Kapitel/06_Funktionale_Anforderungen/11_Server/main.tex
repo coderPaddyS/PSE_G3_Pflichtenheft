@@ -1,0 +1,24 @@
+\section{/FA120/ Aliasüberprüfung}
+\label{/FA120/}
+\paragraph{Ziel}
+Der Server sortiert Alias-Vorschläge aus, die verboten oder schon vorhanden sind.
+\paragraph{Kategorie}
+sekundär
+\paragraph{Verfügbarkeit}
+online
+\paragraph{Vorbedingung}
+Server ist eingeschaltet und ist mit dem Internet verbunden.
+\paragraph{Nachbedingung}
+Server ist eingeschaltet. Der Alias-Vorschlag wurde aussortiert oder zur Bewertung freigegeben.
+\paragraph{Akteure}
+Server
+\paragraph{Auslösendes Ereignis}
+Der Server hat einen Alias-Vorschlag erhalten.
+\paragraph{Beschreibung}
+Der Server überprüft eingehende Alias-Vorschläge. Der Server sortiert Alias-Vorschläge aus, auf die mindestens einer der folgenden Punkte zutrifft:
+\begin{itemize}
+    \item Der Alias-Vorschlag ist bereits ein existierender Alias.
+    \item Der Alias-Vorschlag existiert bereits (als Alias-Vorschlag).
+    \item Der Alias-Vorschlag steht auf der Blacklist.
+\end{itemize}
+Aussortierte Alias-Vorschläge werden nicht zur Bewertung durch angemeldete Benutzer freigegeben. Nicht aussortierte Alias-Vorschläge werden zur Bewertung durch angemeldete Benutzer freigegeben.
