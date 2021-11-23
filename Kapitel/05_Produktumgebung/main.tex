@@ -4,11 +4,16 @@
 \section{Hard- und Software}
     \paragraph{App}
         Die App läuft auf einem Android Smartphone, welches mindestens API-Level 22 unterstützt.
+        Das Smartphone besitzt einen Internetzugang.
+        Das Smartphone ist dazu in der Lage das \textbf{G}lobal \textbf{P}ositioning \textbf{S}ystem %TODO:\Gls{GPS}END
+            zu nutzen.
 
     \paragraph{Backend}
         Das Server-Backend läuft auf einer virtuellen Maschine auf einem Server.
         Auf der virtuellen Maschine läuft Debian 10 (Buster).
-        Diese virtuelle Maschine ist fähig, Java-Programme durch eine JVM auszuführen.
+        Das Server-Backend ist vom darunterliegenden System durch eine eigene virtuelle Linux-Umgebung, hier Docker, abgegrenzt.
+        Die virtuelle Linux-Umgebung ist fähig, Java-Programme durch eine JVM auszuführen.
+        Das Backend ist in Java 17 geschrieben.
 
     \paragraph{Admin-Panel}
         Das Admin-Panel ist auf jedem HTML5-, JavaScript- und CSS-fähigem Gerät aufrufbar.
