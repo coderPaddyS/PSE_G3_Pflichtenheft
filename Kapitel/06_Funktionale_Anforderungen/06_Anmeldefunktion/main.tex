@@ -9,8 +9,10 @@ sekundär
 online, nicht angemeldete Benutzer
 \paragraph{Vorbedingung}
 Der Benutzer besitzt ein Konto bei einer unterstützten Anmeldeplattform (vorzugsweise Shibboleth Identity Provider).
-\paragraph{Nachbedingung}
+\paragraph{Nachbedingung (Erfolg)}
 Der Benutzer besitzt eine eindeutige ID. Der Benutzer ist ein "angemeldeter Benutzer".
+\paragraph{Nachbedingung (Misserfolg)}
+Die App zeigt eine Fehlermeldung an.
 \paragraph{Akteure}
 nicht angemeldeter Benutzer, Anmeldeplattform
 \paragraph{Auslösendes Ereignis}
@@ -25,7 +27,9 @@ nicht angemeldeter Benutzer, Anmeldeplattform
       \item Der Benutzer akzeptiert den Datenschutz.
       \item Der Benutzer wählt eins der unterstützten Anmeldeverfahren.
       \item Der Benutzer meldet sich über das gewählte Verfahren an.
-      \subitem{Erfolg:} Die App speichert eine eindeutige ID für den Benutzer. Die App weist dem Benutzer die Rolle "angemeldeter Benutzer" zu.
+            \begin{itemize}
+                  \item{Erfolg:} Die App speichert eine eindeutige ID für den Benutzer. Die App weist dem Benutzer die Rolle "angemeldeter Benutzer" zu.
+            \end{itemize}
       \item Die App zeigt Informationen zum Erfolg oder Misserfolg der Anmeldung an.
       \item Die App kehrt zur vorherigen Ansicht zurück. 
 \end{enumerate}
