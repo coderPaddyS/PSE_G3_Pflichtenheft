@@ -3,18 +3,55 @@
 
 \section{Hard- und Software}
     \paragraph{App}
-        Die App läuft auf einem Android Smartphone, welches mindestens API-Level 22 unterstützt.
+        Die App läuft auf einem %TODO:\Gls{Android}END
+            %TODO:\GLS{Smartphone}END
+            , welches mindestens %TODO:\Gls{API-Level}
+            22 unterstützt.
+        Das %TODO:\GLS{Smartphone}END
+            besitzt einen Internetzugang.
+        Das %TODO:\GLS{Smartphone}END
+            ist dazu in der Lage das \textbf{G}lobal \textbf{P}ositioning \textbf{S}ystem %TODO:\Gls{GPS}END
+            zu nutzen.
 
     \paragraph{Backend}
-        Das Server-Backend läuft auf einer virtuellen Maschine auf einem Server.
-        Auf der virtuellen Maschine läuft Debian 10 (Buster).
-        Diese virtuelle Maschine ist fähig, Java-Programme durch eine JVM auszuführen.
+        Das Server-%TODO:\Gls{Backend}END
+            läuft auf einer virtuellen Maschine (%\TODO:Gls{VM}END
+            ) auf einem %TODO:\Gls{Server}END
+            .
+        Auf der %TODO:\Gls{VM}END
+            läuft %TODO:\Gls{Debian}END
+            10 (Buster).
+        Das Server-%TODO:\Gls{Backend}END
+            ist vom darunterliegenden System durch eine eigene virtuelle Linux-Umgebung (%TODO:\Gls{VLU}END
+            ), hier %TODO:\Gls{Docker}END
+            , abgegrenzt.
+        Die %TODO:\Gls{VLU}END
+            ist fähig, %TODO:Gls{Java}END
+            -Programme durch eine Java Virtual Machine (%TODO:\Gls{JVM}END
+            auszuführen.
+        Das %TODO:\Gls{Backend}END
+            ist in %TODO:Gls{Java}END
+            17 geschrieben.
 
     \paragraph{Admin-Panel}
-        Das Admin-Panel ist auf jedem HTML5-, JavaScript- und CSS-fähigem Gerät aufrufbar.
+        Das %TODO:\Gls{Admin-Panel}END
+            ist auf jedem %TODO:\Gls{HTML5}END
+            -, %TODO:\Gls{JavaScript}END
+            - und %TODO:\Gls{CSS3}END
+            -fähigem %TODO:\Gls{Gerät}
+            aufrufbar.
 
 \section{Schnittstellen}
     \paragraph{Netzwerk-Zugriffe}
-        Die App sowie das Admin-Panel kommunizieren mit dem Server über HTTPS. Dieser ist über die definierte URL \textit{https://pse.itermori.de},
-        das Admin-Panel über die URL \textit{https://pse.itermori.de/admin}, erreichbar. \\
-        Der Server kommuniziert durch HTTPS mit den KIT-Servern erreichbar unter \textit{https://kit.edu}.
+        Die App sowie das %TODO:\Gls{Admin-Panel}END
+            kommunizieren mit dem %TODO:\Gls{Server}END
+            über %TODO:\Gls{HTTPS}END
+            . Dieser ist über die definierte %TODO:\Gls{URL}END
+            \textit{https://pse.itermori.de},
+        das %TODO:\Gls{Admin-Panel}END
+            über die %TODO:\Gls{URL}END
+            \textit{https://pse.itermori.de/admin}, erreichbar. \\
+        Der %TODO:\Gls{Server}END
+            kommuniziert durch %TODO:\Gls{HTTPS}END
+            mit den %TODO:\Gls{KIT}END
+            -Servern erreichbar unter \textit{https://kit.edu}.
