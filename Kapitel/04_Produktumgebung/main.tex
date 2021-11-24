@@ -1,0 +1,24 @@
+\newpage
+\chapter{Produktumgebung}
+
+\section{Hard- und Software}
+    \paragraph{App}
+        Die App läuft auf einem \Gls{Android}-\Gls{Smartphone}, welches mindestens \Gls{API-Level} 22 unterstützt.
+        Das \Gls{Smartphone} besitzt einen Internetzugang.
+        Das \Gls{Smartphone} ist dazu in der Lage das \textbf{G}lobal \textbf{P}ositioning \textbf{S}ystem \Gls{GPS} zu nutzen.
+
+    \paragraph{Backend}
+        Das \Gls{Server}-\Gls{Backend} läuft auf einer virtuellen Maschine (\Gls{VM}) auf einem \Gls{Server}.
+        Auf der \Gls{VM} läuft \Gls{Debian} 10 (Buster).
+        Das \Gls{Server}-\Gls{Backend}ist vom darunterliegenden System durch eine eigene virtuelle Linux-Umgebung (\Gls{VLU}), hier \Gls{Docker}, abgegrenzt.
+        Die \Gls{VLU} ist fähig, \Gls{Java}-Programme durch eine Java Virtual Machine (\Gls{JVM}) auszuführen.
+        Das \Gls{Backend} ist in \Gls{Java} 17 geschrieben.
+
+    \paragraph{Admin-Panel}
+        Das \Gls{Admin-Panel} ist auf jedem \Gls{HTML5}-, \Gls{JavaScript}- und \Gls{CSS3}-fähigem \Gls{Endgeraet} aufrufbar.
+
+\section{Schnittstellen}
+    \paragraph{Netzwerk-Zugriffe}
+        Die App sowie das \Gls{Admin-Panel} kommunizieren mit dem \Gls{Server} über \Gls{HTTPS}. Dieser ist über die definierte \Gls{URL} \textit{https://pse.itermori.de},
+        das \Gls{Admin-Panel} über die \Gls{URL} \textit{https://pse.itermori.de/admin}, erreichbar. \\
+        Der \Gls{Server} kommuniziert durch \Gls{HTTPS} mit den \Gls{KIT}-Servern erreichbar unter \textit{https://kit.edu}.

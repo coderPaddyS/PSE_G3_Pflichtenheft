@@ -1,0 +1,14 @@
+\section{Datenkonsistenzen}
+
+Folgende Datenkonsistenzen sind einzuhalten:
+\begin{enumerate}[label=\textbf{/T\arabic*0/}, align=left, resume]
+	\item Es werden bei der Suchfunktion nur \Gls{Alias} von Gebäuden und Räumen anerkannt und somit gefunden, die bereits vom \Gls{Server} angenommen bzw. lokal hinzugefügt wurden.
+	\item Existiert der vom \Gls{Benutzer} eingegebene Bezeichner für ein Gebäude nicht, erscheint eine Fehlermeldung.
+	\item Existiert der vom \Gls{Benutzer} eingegebene Bezeichner für einen Raum nicht, erscheint eine Fehlermeldung.
+	\item Die Bezeichner bzw. \Glspl{Alias} eines Gebäudes bzw. eines Raumes sind insofern eindeutig, dass kein anderer Gebäude oder Raum mit diesen Bezeichnern bzw. \Glspl{Alias}n identifiziert und somit gefunden wird.
+	\item \Glspl{Benutzer} können nur dann existierende \Glspl{Alias-Vorschlag} für, wenn sie eingeloggt sind.
+	\item \Glspl{Benutzer} können nur dann \Glspl{Alias-Vorschlag} hinzufügen, wenn sie eingeloggt sind.
+	\item Ein \Gls{Alias-Vorschlag} sollte nicht mehrfach im System existieren.
+	\item Ein \Gls{Benutzer} sollte einen \Gls{Alias-Vorschlag} nur einmal bewerten können.
+	\item Es werden nur \Glspl{Alias-Vorschlag} für die Eingabe des \Gls{Benutzer}s bei der Suchfunktion unterbreitet, die das eingegebene Wort vervollständigen oder Rechtschreibfehler korrigieren und die vorgeschlagene Zeichenkette tatsächlich auch einen Bezeichner für ein Gebäude oder einen Raum ist.
+\end{enumerate}
