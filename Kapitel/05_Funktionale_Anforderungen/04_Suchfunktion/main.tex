@@ -1,41 +1,41 @@
 \section{/FA40/ Suchfunktion}
 \label{/FA40/}
 \paragraph{Ziel}
-Der Benutzer kann nach Gebäuden und Räumen suchen. 
+Der \Gls{Benutzer} kann nach Gebäuden und Räumen suchen. 
 Das Suchen ist möglich mit:
 \begin{itemize}
     \item Gebäudenummer
     \item Gebäudenummer und Raumnummer
     \item Name einer Person (wenn nach Büro gesucht wird)
-    \item lokaler oder globaler Alias
+    \item \gls{lokal}er oder \gls{global}er \Gls{Alias}
 \end{itemize}
 
 \paragraph{Kategorie}
 primär
 \paragraph{Verfügbarkeit}
-offline (eingeschränkt: Suche mit Personenname ist ggf. nur online möglich; Abgleich mit neuen Aliassen, die noch nicht heruntergeladen wurden, ist offline nicht möglich), alle Benutzer
+offline (eingeschränkt: Suche mit Personenname ist ggf. nur online möglich; Abgleich mit neuen \Glspl{Alias}n, die noch nicht heruntergeladen wurden, ist offline nicht möglich), alle \Glspl{Benutzer}
 \paragraph{Vorbedingung}
-Der Benutzer befindet sich in der Hauptansicht (Kartenansicht).
+Der \Gls{Benutzer} befindet sich in der Hauptansicht (\Gls{Kartenansicht}).
 \paragraph{Nachbedingung (Erfolg)}
 Das gesuchte Objekt wird angezeigt.
 \paragraph{Nachbedingung (Misserfolg)}
 Es erscheint eine Fehlermeldung. Existiert das Gebäude aber der gesuchte Raum nicht, wird zusätzlich das Gebäude angezeigt.
 \paragraph{Akteure}
-angemeldeter oder nicht angemeldeter Benutzer
+angemeldeter oder nicht angemeldeter \Gls{Benutzer}
 \paragraph{Auslösendes Ereignis}
-Der Benutzer klickt auf das Suchfeld.
+Der \Gls{Benutzer} klickt auf das \Gls{Suchfeld}.
 \paragraph{Beschreibung}
 \begin{enumerate}
-    \item Die Tastatur öffnet sich. Die App schlägt die letzten Suchbegriffe vor.
-    \item Der Benutzer tippt einen Suchbegriff ein.
-    \item Die App zeigt Vorschläge zum eingegebenen Text an. Die Vorschläge werden nach jedem eingegebenen Zeichen aktualisiert.
-    \item Der Nutzer wählt einen Vorschlag aus oder bestätigt die Eingabe.
+    \item Die Tastatur öffnet sich. Die App schlägt die letzten \Glspl{Suchbegriff} vor.
+    \item Der \Gls{Benutzer} tippt einen \Gls{Suchbegriff} ein.
+    \item Die App zeigt \Glsplural{Alias-Vorschlag} zum eingegebenen Text an. Die \Glspl{Alias-Vorschlag} werden nach jedem eingegebenen Zeichen aktualisiert.
+    \item Der \Gls{Benutzer} wählt einen \Gls{Alias-Vorschlag} aus oder bestätigt die Eingabe.
     \item Die App prüft, ob zur Eingabe ein Treffer existiert.
         \begin{enumerate}
             \item{Erfolg:} Die App zeigt das gesuchte Gebäude bez. den gesuchten Raum an.
             \item{Misserfolg:} 
             \begin{enumerate}
-                \item Wenn kein Gebäude zum eingegebenen Suchbegriff existiert, oder die eingegebene Person nicht im System existiert, wird eine Fehlermeldung angezeigt.
+                \item Wenn kein Gebäude zum eingegebenen \Gls{Suchbegriff} existiert, oder die eingegebene Person nicht im System existiert, wird eine Fehlermeldung angezeigt.
                 \item Existiert das Gebäude, aber der Raum nicht, zeigt die App das Gebäude und eine Fehlermeldung an.
             \end{enumerate}
         \end{enumerate}
