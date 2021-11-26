@@ -1,9 +1,5 @@
 \subsection*{NFL90}
 
-Innerhalb einer Android-Emulation wird die App gestartet.
-Danach wird ein zufälliges Gebäude ausgewählt, welches verschiedene Etagen implementiert hat.
-Nun wird die Etagenansicht dieses Gebäudes geöffnet.
-Eine interne Stoppuhr wird gestartet, sobald ein beliebiger Etagenwechsel durchgeführt werden soll.
-Die Stoppuhr wird angehalten, sobald eine andere Etage angezeigt wird.
-Das kann durch Tools wie Espresso getestet werden.
-Durch Wiederholungen gewinnt der Test an statistischer Signifikanz.
+Der \Gls{Browser} wird gestartet und das \Gls{Admin-Panel} wird aufgerufen.
+Dabei wird eine Stoppuhr gestartet, die endet, sobald der \Gls{DOM} fertig geladen hat.
+Dies kann auch durch Werkzeuge wie \footnote{\href{https://web.dev/measure}{https://web.de/measure}} getestet werden.
