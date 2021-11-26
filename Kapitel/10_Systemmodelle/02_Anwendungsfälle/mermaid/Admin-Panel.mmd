@@ -1,0 +1,21 @@
+flowchart TB
+
+A[Administrator]
+S[Server]
+
+subgraph Admin-Panel
+    direction TB 
+    AH([Alias hinzufügen])
+    AA([Alias ablehnen])
+    AB([Alias blacklisten])
+    E([Einstellungen ändern])
+    AD([Alias aktualisieren])
+    AE([Alias entfernen])
+    
+    AB -.-> |<<extends>>| AA
+    AH -.-> |<<includes>>| AD
+    AE -.-> |<<includes>>| AD
+
+end
+AD & AA & E --- S
+A --- AH & AB & AA & AE & E

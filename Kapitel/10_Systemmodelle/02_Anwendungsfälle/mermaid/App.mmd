@@ -1,0 +1,23 @@
+flowchart LR
+
+N[Nutzer]
+S[Server]
+
+subgraph App
+    direction TB
+    GRF([Gebäude/Raum finden])
+    AN([Anmelden])
+    SA([Standort anzeigen])
+    E([Einstellungen ändern])
+    AF([Alias finden])
+    AH([Alias hinzufügen])
+    AV([Alias vorschlagen])
+    AB([Alias bewerten])
+
+    AF -.-> |<<includes>>| GRF 
+    AV & AB -.-> |<<includes>>| AN
+    AV -.-> |<<extends>>| AH
+end
+
+AN --- S
+N --- AF & GRF & SA & E & AN & AV & AH & AB
