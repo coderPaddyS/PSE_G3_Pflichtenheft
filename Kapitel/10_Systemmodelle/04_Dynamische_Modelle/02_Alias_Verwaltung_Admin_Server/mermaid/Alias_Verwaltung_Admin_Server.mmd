@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant A as Administrator
+    participant S as Server
+
+    A ->>+ S: meldeAn()
+    S -->>- A: istAngemeldet
+    A -->>+ S: setzeMindestAnzahlBewertung()
+    Note over A,S: Anzahl ab dann ein Alias-Vorschlag angezeigt wird
+    A ->>+ S: zeigeAnAliasVorschlaege()
+    S -->>- A: aliasVorschlaege
+    loop aliasVorschlaege
+        A ->>+ A: behandleAliasVorschlag()
+        alt angenommen
+            A ->>+ S: fuegeAliasGlobalHinzu()
+        else verbietet
+            A ->>+ S: fuegeAliasBlacklistHinzu()
+        else abgelehnt
+            A ->>+ S: verwerfeAlias()
+        end
+    end
