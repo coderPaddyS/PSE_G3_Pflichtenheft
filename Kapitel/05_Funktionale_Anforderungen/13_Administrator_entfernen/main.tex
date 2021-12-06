@@ -1,0 +1,38 @@
+\section[Entfernen eines Administratorzugangs]{/FA130/ Entfernen eines Administratorzugangs}
+\label{/FA140/}
+\paragraph{Ziel}
+Dem \Gls{Server} wird ein bestehender \Gls{Administrator}zugang entfernt.
+Dieser Administrator kann sich nicht mehr im \Gls{Admin-Panel} authentifizieren.
+Dieser Administrator kann sich nicht mehr mit dem \Gls{Server} durch \Gls{SSH} verbinden.
+\paragraph{Kategorie}
+primär
+\paragraph{Zugehörige Kriterien}
+\hyperref[/MK110/]{/MK110/}, \hyperref[/MK112/]{/MK112/}
+\paragraph{Verfügbarkeit}
+online
+\paragraph{Vorbedingung}
+\Gls{Server} ist eingeschaltet und mit dem Internet verbunden.
+Ein bestehender \Gls{Administrator}zugang soll entfernt werden.
+Ein \Gls{Administrator} hat eine \Gls{Kommandozeile} geöffnet und ist mit dem Internet verbunden.
+Diese \Gls{Kommandozeile} kann \Gls{SSH} ausführen.
+Dem \Gls{Administrator} liegt der Nutzername des zu entfernenden \Gls{Administrator}s vor.
+\paragraph{Nachbedingung}
+\Gls{Server} ist eingeschaltet und mit dem Internet verbunden.
+Der bestehende \Gls{Administrator}zugang wurde entfernt.
+Der bestehende \Gls{Administrator} kann sich nicht mehr im \Gls{Admin-Panel} authentifizieren.
+Der bestehende \Gls{Administrator} kann sich nicht mehr durch \Gls{SSH} mit dem Server verbinden.
+\paragraph{Akteure}
+\Gls{Server}
+Neuer \Gls{Administrator}
+Alter \Gls{Administrator}
+\paragraph{Auslösendes Ereignis}
+Ein bestehender \Gls{Administrator} soll entfernt werden.
+\paragraph{Beschreibung}
+\begin{enumerate}
+    \item   Ein \Gls{Administrator} verbindet sich durch \Gls{SSH} mit dem Server.
+            Hierfür wird auf der Konsole \texttt{ssh pse@itermori.de} eingegeben.
+    \item   Dieser \Gls{Administrator} entfernt den bestehenden \Gls{Administrator}zugang.
+            Hierfür wird auf der Konsole \texttt{./delad <Nutzername>} eingegeben.
+            \texttt{<Nutzername>} steht hier für den Nutzernamen des bestehenden \Gls{Administrator}s.
+    \item   Der bestehende Administrator trennt seine Verbindung mit dem \Gls{Server} durch die Eingabe \texttt{exit}.
+\end{enumerate}
