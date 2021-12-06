@@ -2,7 +2,11 @@
 
 \begin{samepage}
     \begin{enumerate}[label=\textbf{/NFP\arabic*0/}, align=left, start=3]
-        \item Das \Gls{Backend} lässt sicht in höchstens 10 Schritten installieren.
+        \item Das \Gls{Backend} lässt sicht in höchstens 10 Schritten installieren. \\
+              Die Anzahl an Installationsschritten korreliert mit der Wahrscheinlichkeit des Auftreten eines Fehlers während der Installation.
+              Die Fehlerwahrscheinlichkeit eines Menschen bei der Befolgung von Instruktionen, die ihm bekannt sind, wird hier mit $~5\%$ eingeschätzt.
+              Die Wahrscheinlichkeit einer fehlerfreien Installation wird durch $0.95^n$ beschrieben, wobei $n$ die Installationsschritte sind.
+              Das Lösen der Gleichung $0.95^n > 0.5$ ergibt $n < 13.5$. Die Installationsschritte werden somit auf 10 beschränkt, um Fehler in den Annahmen vorzubeugen.
         \item Das \Gls{Backend} abstrahiert das zugrunde liegende \Gls{System} in einer \Gls{Schnittstelle}.
     \end{enumerate}
 \end{samepage}
