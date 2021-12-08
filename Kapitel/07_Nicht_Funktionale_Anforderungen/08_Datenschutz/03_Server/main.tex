@@ -2,19 +2,21 @@
 
 \begin{samepage}
     \begin{enumerate}[label=\textbf{/NFD\arabic*0/}, align=left, start=5]
-        \item Es werden keine \Gls{Administrator}-\Glspl{Benutzerdatum}, außer den folgenden, gespeichert:
+        \item \label{/NFD50/} Es werden keine \Gls{Administrator}-\Glspl{Benutzerdatum}, außer den folgenden, gespeichert:
             \begin{itemize}
                 \item E-Mail-Adresse der Anmeldung
                 \item Zeitpunkt der Anmeldung
                 \item Ort der Anmeldung
                 \item \Gls{IP-Adresse} der Anmeldung
             \end{itemize}
-        \item Es werden keine \Glspl{Benutzerdatum}, außer den folgenden, gespeichert:
+            Diese nicht funktionale Anforderung wird durch den Testfall \nameref{/TNFD50/} getestet.
+        \item \label{/NFD60/} Es werden keine \Glspl{Benutzerdatum}, außer den folgenden, gespeichert:
             \begin{itemize}
                 \item \Gls{Hash} des/der verwendeten Nutzernamen/E-Mail-Adresse der Anmeldung
                 \item Bewertete \Glspl{Alias} 
                 \item Erstellte \Glspl{Alias} 
             \end{itemize}
-        \item Der \Gls{Server} löscht abgelehnte \Glspl{Alias-Vorschlag} nach spätestens einer Woche.
+            Diese nicht funktionale Anforderung wird durch den Testfall \nameref{/TNFD60/} getestet.
+        \item \label{/NFD70/} Der \Gls{Server} löscht abgelehnte \Glspl{Alias-Vorschlag} nach spätestens einer Woche. Diese nicht funktionale Anforderung wird durch den Testfall \nameref{/TNFD70/} getestet.
     \end{enumerate}
 \end{samepage}
