@@ -1,7 +1,7 @@
 \section[Globale Aliasverwaltung]{/FA100/ Globale Aliasverwaltung}
 \label{/FA100/}
 \paragraph{Ziel}
-\Glspl{Administrator}en können \Glspl{Alias-Vorschlag} und  \Glspl{Alias} verwalten.
+\Glspl{Administrator} können \Glspl{Alias-Vorschlag} und  \Glspl{Alias} verwalten.
 \paragraph{Kategorie}
 sekundär
 \paragraph{Zugehörige Kriterien}
@@ -19,14 +19,14 @@ keines
 \paragraph{Beschreibung}
 \begin{enumerate}[start=101, label=\textbf{/FA\arabic*/}, align=left]
     \item Das \Gls{Admin-Panel} ist passwortgeschützt.
-    \item Das \Gls{Admin-Panel} zeigt eingereichte \Glspl{Alias-Vorschlag} mit ihrer Bewertung an.
-    \item Der \Gls{Administrator} kann auswählen, wie viele positive oder negative Bewertungen ein \Gls{Alias-Vorschlag} haben muss, damit er angezeigt wird.
-    \item Der \Gls{Administrator} kann den Standardwert wählen, wie viele positive oder negative Bewertungen ein \Gls{Alias-Vorschlag} haben muss, damit er angezeigt wird. Der neue Standardwert wird gespeichert.
-    \item Der \Gls{Administrator} kann einen \Gls{Alias-Vorschlag} annehmen. Der \Gls{Alias-Vorschlag} wird vom \Gls{Server} in die \Gls{Alias}-\Gls{Datenbank} aufgenommen. Der \Gls{Alias-Vorschlag} ist nun ein \gls{global}er \Gls{Alias}.
-    \item Der \Gls{Administrator} kann einen \Gls{Alias-Vorschlag} ablehnen. Der \Gls{Alias-Vorschlag} wird verworfen.
-    \item Der \Gls{Administrator} kann einen \Gls{Alias-Vorschlag} ablehnen und auf eine \Gls{Blacklist} setzen. Der \Gls{Server} fügt den {Alias-Vorschlag} zur \Gls{Blacklist} hinzu. Der \Gls{Alias-Vorschlag} wird verworfen.
-    \item Der \Gls{Administrator} kann einen beliebigen Begriff auf die \Gls{Blacklist} setzen.
-    \item Der \Gls{Administrator} kann die \Gls{Blacklist} einsehen.
-    \item Der \Gls{Administrator} kann einen Begriff von der \Gls{Blacklist} löschen.
+    \item \label{/FA102/} Das \Gls{Admin-Panel} zeigt eingereichte \Glspl{Alias-Vorschlag} mit ihrer Bewertung an. Diese funktionale Anforderung wird durch den Testfall \ref{/T280/} getestet.
+    \item \label{/FA103/} Der \Gls{Administrator} kann auswählen, wie viele positive oder negative Bewertungen ein \Gls{Alias-Vorschlag} haben muss, damit er angezeigt wird. Diese funktionale Anforderung wird durch den Testfall \ref{/T260/} getestet.
+    \item \label{/FA104/} Der \Gls{Administrator} kann den Standardwert wählen, wie viele positive oder negative Bewertungen ein \Gls{Alias-Vorschlag} haben muss, damit er angezeigt wird. Der neue Standardwert wird gespeichert. Diese funktionale Anforderung wird durch den Testfall \ref{/T260/} getestet.
+    \item \label{/FA105/} Der \Gls{Administrator} kann einen \Gls{Alias-Vorschlag} annehmen. Der \Gls{Alias-Vorschlag} wird vom \Gls{Server} in die \Gls{Alias}-\Gls{Datenbank} aufgenommen. Der \Gls{Alias-Vorschlag} ist nun ein \gls{global}er \Gls{Alias}. Diese funktionale Anforderung wird durch den Testfall \ref{/T280/} getestet.
+    \item \label{/FA106/} Der \Gls{Administrator} kann einen \Gls{Alias-Vorschlag} ablehnen. Der \Gls{Alias-Vorschlag} wird verworfen. Diese funktionale Anforderung wird durch den Testfall \ref{/T280/} getestet.
+    \item \label{/FA107/} Der \Gls{Administrator} kann einen \Gls{Alias-Vorschlag} ablehnen und auf eine \Gls{Blacklist} setzen. Der \Gls{Server} fügt den {Alias-Vorschlag} zur \Gls{Blacklist} hinzu. Der \Gls{Alias-Vorschlag} wird verworfen. Diese funktionale Anforderung kann durch den Testfall \ref{/T280/} getestet.
+    \item \label{/FA108/} Der \Gls{Administrator} kann einen beliebigen Begriff auf die \Gls{Blacklist} setzen. Diese funktionale Anforderung wird durch den Testfall \ref{/T290/} getestet.
+    \item \label{/FA109/} Der \Gls{Administrator} kann die \Gls{Blacklist} einsehen. Diese funktionale Anforderung wird durch den Testfall \ref{/T290/} getestet.
+    \item \label{/FA110/} Der \Gls{Administrator} kann einen Begriff von der \Gls{Blacklist} löschen. Diese funktionale Anforderung wird durch den Testfall \ref{/T290/} getestet.
     \item Der \Gls{Administrator} kann einen existierenden \gls{global}en \Gls{Alias} entfernen. Dabei löscht der \Gls{Server} den \gls{global}en \Gls{Alias} aus der \Gls{Alias}-\Gls{Datenbank}.
 \end{enumerate}
