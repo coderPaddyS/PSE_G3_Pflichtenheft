@@ -12,21 +12,22 @@ primär
 \paragraph{Verfügbarkeit}
 online
 \paragraph{Vorbedingung}
+Der neue \Gls{Administrator} hat sich in der App angemeldet.
 \Gls{Server} ist eingeschaltet und mit dem Internet verbunden.
 Die Mehrheit unter den \Glspl{Administrator} möchten einen neuen Administrator hinzufügen.
 Ein bestehender \Gls{Administrator} hat eine \Gls{Kommandozeile} geöffnet und ist mit dem Internet verbunden.
 Diese \Gls{Kommandozeile} kann \Gls{SSH} ausführen.
-Dem bestehenden \Gls{Administrator} liegt der Nutzername, das ge\gls{Hash}te Passwort des neuen Administrators und einen \Gls{Public-Key} eines \Gls{SSH}-Schlüssels vor.
-Der neue \Gls{Administrator} hat \Gls{SSH} für den \Gls{Server} konfiguriert.
+Dem bestehenden \Gls{Administrator} liegt der Nutzername und einen \Gls{Public-Key} des neuen Administrators vor.
+
 \paragraph{Nachbedingung}
 \Gls{Server} ist eingeschaltet und mit dem Internet verbunden.
 Der neue \Gls{Administrator} wurde hinzugefügt.
 Der neue \Gls{Administrator} kann sich im \Gls{Admin-Panel} authentifizieren.
 Der neue \Gls{Administrator} kann sich durch \Gls{SSH} mit dem Server verbinden.
+
 \paragraph{Akteure}
 \Gls{Server}
-Neuer \Gls{Administrator}
-Alter \Gls{Administrator}
+Neuer \Gls{Administrator}, Bestehender \Gls{Administrator}
 \paragraph{Auslösendes Ereignis}
 Ein neuer \Gls{Administrator} soll hinzugefügt werden.
 \paragraph{Beschreibung}
@@ -34,8 +35,8 @@ Ein neuer \Gls{Administrator} soll hinzugefügt werden.
     \item   Der bestehende \Gls{Administrator} verbindet sich durch \Gls{SSH} mit dem Server.
             Hierfür wird auf der Konsole \texttt{ssh pse@itermori.de} eingegeben.
     \item   Der bestehende \Gls{Administrator} legt den neuen Administrator-Zugang an.
-            Hierfür wird auf der Konsole \texttt{./regad <Nutzername> <Passwort-Hash> <Public-Key>} eingegeben.
-            \texttt{<Nutzername>} steht hier für den Nutzernamen des neuen \Gls{Administrator}s, \texttt{<Passwort-Hash>} steht für das ge\gls{Hash}te Passwort des neuen Administrators
+            Hierfür wird auf der Konsole \texttt{./regad <Nutzername> <Public-Key>} eingegeben.
+            \texttt{<Nutzername>} steht hier für den Nutzernamen des neuen \Gls{Administrator}s
             und \texttt{<Public-Key>} steht für den \Gls{Public-Key} des neuen \Gls{Administrator}s.
     \item   Der bestehende Administrator trennt seine Verbindung mit dem \Gls{Server} durch die Eingabe \texttt{exit}.
 \end{enumerate}
