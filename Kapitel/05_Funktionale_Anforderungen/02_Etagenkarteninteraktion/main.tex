@@ -5,9 +5,9 @@
 \paragraph{Kategorie}
 primär
 \paragraph{Zugehörige Kriterien}
-\ref{/MK70/} \ref{/MK91/} \ref{/MK92/} \ref{/MK93/} \ref{/KK50/} \ref{/KK100/}
+\hyperref[/MK70/]{/MK70/}, \hyperref[/MK91/]{/MK91/}, \hyperref[/MK92/]{/MK92/}, \hyperref[/MK93/]{/MK93/}, \hyperref[/KK50/]{/KK50/}, \hyperref[/KK100/]{/KK100/}
 \paragraph{Verfügbarkeit}
-\gls{offline} (eingeschränkt: Information zu Bürobesitzer liegt ggf. nur online vor), alle \Glspl{Benutzer}
+\gls{offline}, alle \Glspl{Benutzer}
 \paragraph{Vorbedingung}
 Für das ausgewählte Gebäude liegen \Glspl{Etagenkarte} vor.
 \paragraph{Nachbedingung}
@@ -25,12 +25,15 @@ angemeldeter oder nicht angemeldeter \Gls{Benutzer}
 \hfill \break
 Diese funktionale Anforderung wird durch den Testfall \ref{/T120/} getestet.
 \begin{enumerate}
-    \item Die App zeigt die \Gls{Etagenkarte} auf dem Gebäude an. Die normale \Gls{Karte} ist weiterhin sichtbar und benutzbar. Die \Gls{Etagenkarte} zeigt die Räume auf der Etage. Gegebenenfalls kann eine \Gls{Etagenkarte} auch nur die Hörsäle eines Gebäudes anzeigen.
+    \item Die App zeigt die \Gls{Etagenkarte} auf dem Gebäude an. Die normale \Gls{Karte} ist weiterhin sichtbar und benutzbar. 
+    Die \Gls{Etagenkarte} zeigt die Räume auf der Etage. An jedem Raum steht die Raumnummer.
+    Gegebenenfalls kann eine \Gls{Etagenkarte} auch nur die Hörsäle eines Gebäudes anzeigen.
     \item Die App zeigt an, die wievielte Etage gerade angezeigt wird.
+    \item Die \Gls{Etagenkarte} ist \gls{offline} verfügbar.Die \Gls{Etagenkarte} und die Kartendaten (Raumnummern, Personendaten) sind daher \gls{lokal} auf dem \Gls{Endgeraet} gespeichert.
 \end{enumerate}
 \paragraph{Beschreibung der Interaktionen}
 \begin{enumerate}[start=22, label=\textbf{/FA\arabic*/}, align=left]
     \item \label{/FA22/} Der \Gls{Benutzer} kann die angezeigte Etage wechseln. Diese funktionale Anforderung wird durch den Testfall \ref{/T150/} getestet.
-    \item \label{/FA23/} Klickt der \Gls{Benutzer} auf einen Raum, so zeigt die App Informationen zu diesem Raum wie Raumnummer und um wessen Büro es sich handelt (sofern diese Information vorliegt) an. Die \Gls{Karte} ist weiterhin sichtbar. Klickt der \Gls{Benutzer} erneut (ggf. auf eine andere Stelle) auf die \Gls{Karte} schließen sich die Informationen. Diese funktionale Anforderung wird durch die Testfälle \ref{/T140/}, \ref{/T220/} getestet.
-    \item \label{/FA24/} Klickt der \Gls{Benutzer} neben das Gebäude auf die \Gls{Karte} schließt sich die \Gls{Etagenkartenansicht} und die normale \Gls{Kartenansicht} wird angezeigt. Kehrt der \Gls{Benutzer} direkt wieder in die \Gls{Etagenkartenansicht} des gleichen Gebäudes zurück, so wird die \Gls{Etagenkarte} der Etage angezeigt, die vor dem Verlassen angezeigt wurde. Dies wird durch Testfall \hyperref[/T121/]{/121/} überprüft.
+    \item \label{/FA23/} Klickt der \Gls{Benutzer} auf einen Raum, so zeigt die App Informationen zu diesem Raum wie Raumnummer und um wessen Büro es sich handelt (sofern diese Information vorliegt) an. Die \Gls{Karte} ist weiterhin sichtbar. Klickt der \Gls{Benutzer} erneut (ggf. auf eine andere Stelle) auf die \Gls{Karte}, schließen sich die Informationen. Diese funktionale Anforderung wird durch die Testfälle \ref{/T140/}, \ref{/T220/} getestet.
+    \item \label{/FA24/} Klickt der \Gls{Benutzer} neben das Gebäude auf die \Gls{Karte}, schließt sich die \Gls{Etagenkartenansicht} und die normale \Gls{Kartenansicht} wird angezeigt. Kehrt der \Gls{Benutzer} direkt wieder in die \Gls{Etagenkartenansicht} des gleichen Gebäudes zurück, so wird die \Gls{Etagenkarte} der Etage angezeigt, die vor dem Verlassen angezeigt wurde. Dies wird durch Testfall \hyperref[/T121/]{/121/} überprüft.
 \end{enumerate}
